@@ -1,0 +1,13 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --names \"api,web\" --prefix-colors \"cyan,magenta\" \"bun run --cwd to-do-api dev\" \"bun run --cwd to-do-web dev\"",
+    "dev:api": "bun run --cwd to-do-api dev",
+    "dev:web": "bun run --cwd to-do-web dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
